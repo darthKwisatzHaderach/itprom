@@ -1,0 +1,18 @@
+div.row style="padding-top: 60px;"
+  = form_for @message, :url => {:action => 'new', :controller => 'contact'} do |form|
+    fieldset.fields
+      div.field
+        = form.label "Название_организации"
+        = form.text_field :name, :class => "input"      
+      div.field
+        = form.label "Контактный email"
+        = form.text_field :email, :class => "input"
+      = form.hidden_field :subject, :value => "С сайта IT-Пром от #{:name}"
+      div.field
+        = form.label "Текст заявки"
+        = form.text_area :body, :class => "input textarea"
+    fieldset.actions
+      = form.submit "Отправить", :class => "btn primary medium", :style => "width: 100px; float: right; color: white"
+      span style="float:right;"
+        |&nbsp
+      = link_to 'Назад', root_path, :class => "btn default medium", :style => "width: 100px; float: right; "
