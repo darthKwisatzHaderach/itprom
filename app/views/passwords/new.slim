@@ -1,0 +1,12 @@
+div.row
+  div.six.columns
+  div.six.columns
+    div#clearance.password-reset
+      h2 = t '.title'
+      p = t '.description'
+      = form_for :password, url: passwords_path do |form|
+        div.field
+          = form.label :email
+          = form.text_field :email, type: 'email', class: 'input'
+        div.submit-field.btn.primary.medium
+          = form.submit

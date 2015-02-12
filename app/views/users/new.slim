@@ -1,0 +1,12 @@
+div.row
+  div.six.columns
+  div.six.columns
+    div#clearance.sign-up
+      h2 = t('.title')
+      = form_for @user do |form|
+        = render partial: '/users/form', object: form
+        div.submit-field.btn.primary.medium
+          = form.submit
+        |&nbsp
+        div.other-links.btn.default.medium
+          = link_to t('.sign_in'), sign_in_path
