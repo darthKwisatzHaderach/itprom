@@ -8,6 +8,7 @@ class WelcomeController < ApplicationController
     @why = Articles.where(alias: 'why').first
     @how_much = Articles.where(alias: 'how-much').first
     @industrial_automation = Articles.where(alias: 'industrial-automation').first
+    @production_online = Articles.where(alias: 'production-online').first
     @contacts = Articles.where(alias: 'contacts').first
   end
 end
