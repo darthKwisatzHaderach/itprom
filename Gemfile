@@ -36,9 +36,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Light weight views
 gem 'slim'
 
+# Admin panel
 gem 'rails_admin'
+
+# Authentication with clearance
+gem "clearance"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
