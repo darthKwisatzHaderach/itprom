@@ -1,0 +1,14 @@
+<div class="site_footer">
+	<div style="height: 1px; background: #223442"></div>
+	<div class="row" style="padding-top: 10px">			
+		<div align="center">
+			<p style="color: #223442;">&copy  IT-Пром 2014 г.</p>
+			<% if signed_in? %>
+			  <%= current_user.email %>
+			  <%= link_to "Sign out", sign_out_path, method: :delete %>
+			<% else %>
+			  <%= link_to "Sign in", sign_in_path %>
+			<% end %>
+		</div>
+	</div>
+</div>
