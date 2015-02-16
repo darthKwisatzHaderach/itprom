@@ -34,28 +34,30 @@
 	    });
 	</script>
 </head>
-<body id="wrapper">
+<body>
 	<div class="navbar" id="navbar-main-nav" gumby-fixed="top">
 		<div class="row">
 			<a class="toggle" gumby-trigger="#navbar-main-nav #main-nav" href="#"><i class="icon-menu"></i></a>
 			<h1 class="two columns logo">
-				<a class="scroll" href="#one" style="font-size: 30px; color: #223442; font-family: Bad Script,Lobster,Cyreal;">IT-Пром</a>
+				<a href="/" style="font-size: 30px; color: #223442; font-family: Bad Script,Lobster,Cyreal;">IT-Пром</a>
 			</h1>
 			<ul id="main-nav" class="nine columns">								
-				<li><a class="scroll" href="#company">Мы</a></li>
-				<li><a class="scroll" href="#supp">СУПП</a></li>
-				<li><a class="scroll" href="#po">Промышленная автоматизация</a></li>
-				<li><a class="scroll" href="#p_online">Производство Онлайн</a></li>								
-				<li><a class="scroll" href="#contacts">Контакты</a></li>
+				<li><a class="scroll" href="/">Мы</a></li>
+				<li><a href="/supp">СУПП</a></li>
+				<li><a href="/industrial-automation">Промышленная автоматизация</a></li>
+				<li><a href="/production-online">Производство Онлайн</a></li>								
+				<li><a href="/contacts">Контакты</a></li>
 			</ul>
 		</div>
 		<div style="height: 1px; background: #223442"></div>
 	</div>
 
-	<%= yield %>		
+	<div style="padding-top: 60px">
+		<%= yield %>		
+	</div>
 
 	<%= render 'footer' %>
-	
+
 	<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>	
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>	
 	<script>
@@ -65,27 +67,6 @@
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	  ga('create', 'UA-xxxxxxxx-x', 'xxxxxxxxxxx');
 	  ga('send', 'pageview');
-	</script>
-
-	<script type="text/javascript">
-		var hashTagActive = "";
-		    $(".scroll").click(function (event) {
-		        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
-		            event.preventDefault();
-		            //calculate destination place
-		            var dest = 0;
-		            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-		                dest = $(document).height() - $(window).height();
-		            } else {
-		                dest = $(this.hash).offset().top;
-		            }
-		            //go to destination
-		            $('html,body').animate({
-		                scrollTop: dest
-		            }, 2000, 'swing');
-		            hashTagActive = this.hash;
-		        }
-		    });
-	</script>
+	</script>	
   </body>
 </html>

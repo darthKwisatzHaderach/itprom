@@ -1,0 +1,24 @@
+div.row
+	h4 СУПП
+div.row
+	h4 = @for_what.title
+	= simple_format(@for_what.full_text)
+	h4 = @what_is_that.title
+	= simple_format(@what_is_that.full_text)
+	h4 = @how_it_works.title
+	= simple_format(@how_it_works.full_text)
+	h4 = @whats_new.title
+	= simple_format(@whats_new.full_text)
+	h4 = @why.title
+	= simple_format(@why.full_text)			
+	h4 = @how_much.title
+	= simple_format(@how_much.full_text)  		  			
+div.row
+	div.medium.warning.btn.pill-right style="float:right;"
+		a href="/contact" 
+			|Хочу попробовать!
+	span style="float:right;"
+		|&nbsp
+	div.medium.danger.btn.pill-left style="float:right;"
+		a href="/contact"
+			|Заказать СУПП!

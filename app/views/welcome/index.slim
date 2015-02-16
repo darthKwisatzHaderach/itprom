@@ -4,45 +4,6 @@ div.row
 	div#company style="height: 400px"
 		h4 = @we.title
 		= simple_format(@we.full_text)
-div style="height: 1px; background: #223442"
-div#two.parallax gumby-parallax="0.3"
-div style="height: 1px; background: #223442"
-div.row
-	div#supp
-		h4 СУПП
-  		div.row
-  			h4 = @for_what.title
-  			= simple_format(@for_what.full_text)
-			h4 = @what_is_that.title
-			= simple_format(@what_is_that.full_text)
-			h4 = @how_it_works.title
-  			= simple_format(@how_it_works.full_text)
-			h4 = @whats_new.title
-  			= simple_format(@whats_new.full_text)
-			h4 = @why.title
-  			= simple_format(@why.full_text)			
-			h4 = @how_much.title
-  			= simple_format(@how_much.full_text)  		  			
-  		div.row
-			div.medium.warning.btn.pill-right style="float:right;"
-				a href="/contact" 
-					|Хочу попробовать!
-			span style="float:right;"
-				|&nbsp
-			div.medium.danger.btn.pill-left style="float:right;"
-				a href="/contact"
-					|Заказать СУПП!
-div style="height: 1px; background: #223442"
-div#three.parallax gumby-parallax="0.3"
-div style="height: 1px; background: #223442"
-div.row
-	div#po style="height: 560px"
-		h4 = @industrial_automation.title
-  		= simple_format(@industrial_automation.full_text)
-div.row
-	div#p_online style="height: 750px"
-		h4 = @production_online.title
-  		= simple_format(@production_online.full_text)  
 div.row
 	div#contacts style="height: 250px"
 		h4 = @contacts.title

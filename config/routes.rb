@@ -9,6 +9,11 @@ Alpha::Application.routes.draw do
   get 'contact' => 'contact#new'
   post 'contact' => 'contact#create'
 
+  get 'supp' => 'pages#supp'
+  get 'industrial-automation' => 'pages#industrial_automation'
+  get 'production-online' => 'pages#production_online'
+  get 'contacts' => 'pages#contacts'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
