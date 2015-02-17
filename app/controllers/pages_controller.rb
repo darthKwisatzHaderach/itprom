@@ -17,6 +17,7 @@ class PagesController < ApplicationController
   end
 
   def contacts
+  	@we = Articles.where(alias: 'we').first
     @contacts = Articles.where(alias: 'contacts').first
   end
 end

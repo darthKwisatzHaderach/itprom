@@ -1,4 +1,7 @@
 div.row
+	div#company
+		h4 = @we.title
+		= simple_format(@we.full_text)
 	div#contacts
 		h4 = @contacts.title
 		= simple_format(@contacts.full_text)

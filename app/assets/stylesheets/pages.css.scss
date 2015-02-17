@@ -1,3 +1,10 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.metro-list { padding-left: 5px; background: #efefef; margin-bottom: 3px; margin-left: 20px; }
+.metro-list.orange { border-left: 5px solid #F5876E;}
+.metro-list.blue{ border-left: 5px solid #61A8DC;}
+.metro-list.green{ border-left: 5px solid #8EBD40;}
+.metro-list.purple { border-left: 5px solid #988CC3;}
+.metro-list.gold { border-left: 5px solid #D8C86E;}
