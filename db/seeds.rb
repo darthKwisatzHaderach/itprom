@@ -65,3 +65,7 @@ Articles.create(title: 'Контакты',
 	intro_text: '',
 	full_text: '<p>По всем вопросам можете писать нам на почту: <a href="mailto:info@itprom.org"><strong>info@itprom.org</strong></a></p>',
 	published: 1)
+
+User.create(admin: true,
+	email: 'admin@itprom.org',
+	encrypted_password: '$2a$10$9nUEhfrutG4jdHzSEOYN1eptAJ1B2papqGUU7EP7NfoFjg7zlP7Pe')

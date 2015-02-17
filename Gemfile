@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'will_paginate'
 gem 'less-rails'
-gem 'google-analytics-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
