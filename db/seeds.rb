@@ -63,5 +63,5 @@ Articles.create(title: 'Производство Онлайн',
 Articles.create(title: 'Контакты',
 	alias: 'contacts',
 	intro_text: '',
-	full_text: '<h5>По всем вопросам можете писать нам на почту: <a href="mailto:info@itprom.org"><strong>info@itprom.org</strong></a></h5><h5>С удовольствием ответим на все интересующие Вас вопросы по телефону: <strong>+7(904)54-45-512</strong></h5>	',
+	full_text: '<p>По всем вопросам можете писать нам на почту: <a href="mailto:info@itprom.org"><strong>info@itprom.org</strong></a></p><p>С удовольствием ответим на все интересующие Вас вопросы по телефону: <strong>+7(904)54-45-512</strong></p>	',
 	published: 1)
