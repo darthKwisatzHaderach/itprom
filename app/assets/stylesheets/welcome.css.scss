@@ -7,6 +7,11 @@
     src: url('HypatiaSansPro-Light.otf');
 }
 
+@font-face {
+    font-family: LITB;
+    src: url('HypatiaSansPro-Semibold.otf');
+}
+
 .navbar ul li > a {
 	font-size: 1.4rem !important;
 }
@@ -17,7 +22,7 @@ p, ol, ul, td {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: LIT !important;
+    font-family: LITB !important;
 }
 
 .row {

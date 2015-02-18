@@ -4,7 +4,10 @@ div.row style="padding-top: 20px;"
 	div#company
 		h4 = @we.title
 		= simple_format(@we.full_text)
-div.row
+div style="height: 1px; background: #223442"
+div#two.parallax gumby-parallax="0.3" gumby-offset="30"
+div style="height: 1px; background: #223442"
+div.row style="padding-top: 20px;"
 	div#contacts
 		h4 = @contacts.title
 		= simple_format(@contacts.full_text)
