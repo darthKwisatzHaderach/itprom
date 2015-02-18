@@ -28,3 +28,18 @@ h1, h2, h3, h4, h5, h6 {
 .row {
 	max-width: 1140px !important;	
 } 
+
+.a:hover {
+	background: none !important;
+	color: #4378dd !important;
+}
+
+.gumby-no-touch .navbar ul li:hover > a, .gumby-touch .navbar ul li.active > a {
+	background: #efefef;
+	color: #4378dd;
+}
+
+.a {
+	color: #222 !important;
+	text-shadow: none !important;	
+}

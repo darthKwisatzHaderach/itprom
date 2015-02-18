@@ -1,4 +1,8 @@
 div.row style="padding-top: 20px;"
 	div#po
 		h4 = @industrial_automation.title
+		= image_tag 'industry.png', style: 'float: left; padding: 40px;'
   		= simple_format(@industrial_automation.full_text)
+  		div.medium.danger.btn.oval style="float:right; background: #c11;"
+  			a href="/contact" 
+  				|Заказать промышленную автоматизацию!
